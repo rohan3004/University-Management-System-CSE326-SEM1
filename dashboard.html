@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | University Management System</title>
+    <link rel="icon" href="images/logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script>
+    function fee()
+    {
+        alert("Fees Paid!")
+    }
+    function ba()
+    {
+        alert("Appointment Booked!")
+    }
+    function cp()
+    {
+        alert("Password Changed!")
+    }
+</script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="dashboard.html"><img src="images/logo.jpg" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                    <li><a href="timetable.html">TIME TABLE</a></li>
+                    <li><a href="examination.html">EXAMINATION</a></li>
+                    <li><form>
+                        <input type="button" value="Change Password" onclick="cp()" id="b1">
+                    </form></li>
+                    <li><a href="index.html">LOGOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+        <div class="mycourses">
+            <table>
+                <caption>My Courses</caption>
+                <thead>
+                <tr>
+                    <th colspan="4">Course Information</th>
+                </tr>
+                <tr>
+                    <th>Attendance</th>
+                    <th>Course Code</th>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>95%</td>
+                    <td>CSE111</td>
+                    <td>ORIENTATION TO COMPUTING</td>
+                </tr>
+                <tr>
+                    <td>100%</td>
+                    <td>CSE326</td>
+                    <td>INTERNET PROGRAMMING LABORATORY</td>
+                </tr>
+                <tr>
+                    <td>88%</td>
+                    <td>INT108</td>
+                    <td>PYTHON PROGRAMMING</td>
+                </tr>
+                <tr>
+                    <td>100%</td>
+                    <td>MEC135</td>
+                    <td>BASICS OF MECHANICAL ENGINEERING</td>
+                </tr>
+                <tr>
+                    <td>91%</td>
+                    <td>MTH174</td>
+                    <td>ENGINEERING MATHEMATICS</td>
+                </tr>
+                <tr>
+                    <td>100%</td>
+                    <td>PES318</td>
+                    <td>SOFT SKILLS-I</td>
+                </tr>
+                <tr>
+                    <td>91%</td>
+                    <td>PHY110</td>
+                    <td>ENGINEERING PHYSICS</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="fee">
+            <h1>Fee</h1>
+            <h2>108000/-</h2>
+            <form>
+                <input type="button" value="Pay Online" onclick="fee()">
+            </form>
+        </div>
+        <div class="PA">
+            <table>
+                <caption>Pending Assignments</caption>
+                <thead>
+                <tr>
+                    <th colspan="4">2 Assignment Left</th>
+                </tr>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Assignment Details</th>
+                    <th>Last Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>CSE111</td>
+                    <td>Test Code Based 2</td>
+                    <td>26-11-2022</td>
+                </tr>
+                <tr>
+                    <td>PHY110</td>
+                    <td>Term Paper</td>
+                    <td>30-11-2022</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card">
+            <img src="images/me.jpg" alt="Rohan" style="width:30%">
+            <h1>Rohan Chakravarty</h1>
+            <p class="title">BTECH CSE</p>
+            <p>University Management System</p>
+          </div>
+          <div class="MM">
+            <img src="images/mentor.jpg" alt="Mentor" style="width:30%">
+            <h1>Mir Junaid Rasool</h1>
+            <p class="title">Mentor</p>
+            <p>University Management System</p>
+            <form>
+                <input type="button" value="Book Appointment" onclick="ba()">
+            </form>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
